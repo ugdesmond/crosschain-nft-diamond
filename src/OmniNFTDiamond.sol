@@ -5,6 +5,8 @@ import { Diamond } from "@solidstate/contracts/proxy/diamond/Diamond.sol";
 import { DiamondWritable } from "@solidstate/contracts/proxy/diamond/DiamondWritable.sol";
 import { DiamondFallback } from "@solidstate/contracts/proxy/diamond/DiamondFallback.sol";
 import { LibOmniNFT } from "./libraries/LibOmniNFT.sol";
+import { OApp } from "@layerzerolabs/solidity-examples/contracts/oapp/OApp.sol";
+
 
 contract OmniNFTDiamond is Diamond, DiamondWritable, DiamondFallback {
     constructor(
